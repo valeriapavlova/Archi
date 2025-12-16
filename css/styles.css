@@ -316,7 +316,19 @@ main {
     }
 
 
+    & .nav--responsive {
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        padding: 2rem;
+        background-color: #F6F6F6;
 
+        &.open {
+            display: flex;
+            
+        } 
+    } 
 
     & .nav {
 
