@@ -315,20 +315,42 @@ main {
     cursor: pointer;
     }
 
-
-    & .nav--responsive {
+    & .menu-responsive {
         display: none;
         position: absolute;
         right: 1rem;
         top: 1rem;
+        bottom: 1rem;
         padding: 2rem;
         background-color: #F6F6F6;
-
+        z-index: 20;
+        height: 100vh;
+        width: calc(100vw - 50%);
         &.open {
             display: flex;
-            
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;   
         } 
-    } 
+        & .nav--responsive {
+            & .nav__list {
+                display: flex;
+                flex-direction: column;
+                gap: var(--s-sm);
+
+                & .link--project {
+                    border-bottom: 1px solid var(--c-hover);
+                }
+                
+                & .dropdown__menu {
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--s-xxs);
+                    padding-left: var(--s-sm);
+                }
+            }
+        } 
+    }
 
     & .nav {
 
