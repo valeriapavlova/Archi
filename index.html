@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contemporary Architecture</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+        <a href="index.html" class="logo--sm logo--mobile">ARCHI.</a>
+
+        <!-- burger button -->
+        <button class="nav-toggle" aria-label="Open menu">
+            <i class="ri-menu-4-line"></i>
+        </button>
+
+        <!-- navigation -->
+        <nav class="nav">
+
+            <!-- navigation list -->
+            <ul class="nav__list">
+                <li class="nav__item"><a class="link" href="index.html">home</a></li>
+                <li class="nav__item dropdown">
+                    <a class="link" href="#projects">projects</a>
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__item"><a class="link dropdown__link" href="landscape.html">landscapes</a>
+                        </li>
+                        <li class="dropdown__item"><a class="link dropdown__link" href="houses.html">private houses</a>
+                        </li>
+                        <li class="dropdown__item"><a class="link dropdown__link" href="urban.html">urban spaces</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a class="link" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- social media -->
+        <div class="social-media">
+            <a class="link" href="#">FB</a>
+            <span>|</span>
+            <a class="link" href="#">TW</a>
+            <span>|</span>
+            <a class="link" href="#">IN</a>
+        </div>
+    </header>
+
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+        <!-- hero -->
+        <section class="hero section">
+            <div class="container hero__container flex-row padding-80">
+                <div class="hero__content flex-col">
+                    <div class="hero__text flex-col">
+                        <h1 class="text--lg">Contemporary vision of housing architecture</h1>
+                        <p class="body-text">Our designs blend comfort, sustainability, and aesthetics to create
+                            inspiring
+                            spaces for contemporary living.</p>
+                    </div>
+                    <a href="#" class="btn btn--primary">Discuss your project<span>+</span></a>
+                </div>
+                <div class="hero__image flex-row">
+                    <picture>
+                        <source srcset="assets/img/hero_main.webp" media="(min-width: 1024px)">
+                        <img src="assets/img/hero_main.webp" alt="Future Urbanistica">
+                    </picture>
+                    <p class="subtitle-text">We redefine modern housing through innovative architecture.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- /hero -->
+
+        <!-- services -->
+        <section class="services section">
+            <div class="container services__container flex-col padding-320">
+                <div class="heading services__heading flex-col">
+                    <h2 class="text--lg">Discover the future of residential design and urban planning. Our team delivers
+                        creative solutions tailored to your lifestyle, combining advanced technology with timeless
+                        style.</h2>
+                    <div class="services__text flex-row">
+                        <p class="body-text">Every project reflects our dedication to quality and detail, from initial
+                            concept to final execution. We collaborate closely with our clients to fully understand
+                            their needs and deliver unique results.</p>
+                        <p class="body-text">Focus on sustainability and well-being is at the core of everything we do.
+                            We strive for harmony between architecture and nature, ensuring each space improves daily
+                            life.</p>
+                    </div>
+                </div>
+                <div id="projects" class="services__content flex-row">
+                    <picture>
+                        <source srcset="assets/img/about_1.webp" media="(min-width: 1024px)">
+                        <img src="assets/img/about_1.webp" alt="Future Urbanistica">
+                    </picture>
+                    <div class="grid-2-2">
+                        <div class="grid-4-2__item flex-col">
+                            <h3 class="text--sm">Landscapes</h3>
+                            <p class="body-text--sm">Our work transforms outdoor spaces into places of relaxation and
+                                inspiration.</p>
+                            <a href="#" class="btn btn--dark">View more<span>+</span></a>
+                        </div>
+                        <div class="grid-4-2__item flex-col">
+                            <h3 class="text--sm">Private houses</h3>
+                            <p class="body-text--sm">With innovative solutions we create spaces where families grow and
+                                thrive.</p>
+                            <a href="#" class="btn btn--dark">View more<span>+</span></a>
+                        </div>
+                        <div class="grid-4-2__item flex-col">
+                            <h3 class="text--sm">Urban spaces</h3>
+                            <p class="body-text--sm">Our approach blends function, aesthetics, and social impact,
+                                shaping
+                                cities for the future.</p>
+                            <a href="#" class="btn btn--dark">View more<span>+</span></a>
+                        </div>
+                        <div class="grid-4-2__item">
+                            <img src="assets/img/about_2.webp" alt="Future Urbanistica">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /services -->
+
+        <!-- video -->
+
+        <section class="video section">
+            <div class="container video__container flex-row padding-80">
+                <div class="video__wrapper">
+                    <img src="assets/img/video-block.webp" alt="video">
+                    <div class="play-icon">
+                        <i class="ri-play-circle-fill"></i>
+                    </div>
+                </div>
+                <p class="subtitle-text">We showcase our design process and innovative solutions in action, inspiring
+                    new possibilities for contemporary living.</p>
+            </div>
+        </section>
+
+        <!-- /video -->
+
+        <!-- testimonial -->
+
+        <section class="testimonial section">
+            <div class="container testimonial__container flex-col padding-320">
+                <div class="heading testimonial__heading flex-col">
+                    <h2 class="text--md">Stories That Inspire Us</h2>
+                    <p class="body-text">Collaboration fuels our creativity. Every project is a journey—our clients’
+                        vision becomes a reality that leaves a meaningful mark on spaces and communities.</p>
+                </div>
+                <div class="carousel">
+                    <button class="carousel__arrow" data-dir="prev"><i class="ri-arrow-left-s-fill"></i></button>
+                    <div class="carousel__viewport">
+                        <div class="carousel__slides flex-col">
+                            <p class="cursive-text carousel__slide">“STCK. created a truly unique experience for our
+                                team, combining innovative design with
+                                practical solutions—making a lasting impact on our gallery and visitors.”</p>
+                            <span class="body-text--sm carousel__slide">Daniel Weiner, Manager at Neue National
+                                Galerie</span>
+                            <!-- more slides -->
+                        </div>
+                    </div>
+                    <button class="carousel__arrow" data-dir="next"><i class="ri-arrow-right-s-fill"></i></button>
+                </div>
+                <div class="testimonial__content flex-row">
+                    <div class="testimonial__image-block">
+                        <img src="assets/img/review_1.webp" alt="Blue-house">
+                        <img src="assets/img/review_2.webp" alt="fasade house">
+                        <img src="assets/img/review_3.webp" alt="interior house">
+                    </div>
+                    <p class="subtitle-text">Our innovative approach delivers tangible results and lasting value,
+                        earning the trust of partners and clients worldwide.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- /testimonial -->
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="footer section">
+        <div class="container footer__container padding-80 flex-col">
+            <div class="footer__upper flex-row">
+                <div class="footer__links flex-col">
+                    <a href="index.html" class="logo--lg">ARCHI.</a>
+                    <div class="social-media">
+                        <a class="link" href="#">FB</a>
+                        <span>|</span>
+                        <a class="link" href="#">TW</a>
+                        <span>|</span>
+                        <a class="link" href="#">IN</a>
+                    </div>
+                </div>
+                <div class="footer__contact flex-col">
+                    <a class="link" href="#">1368 Maryland Avenue NY</a>
+                    <div class="flex-row">
+                        <a class="link" href="tel:+1234567890">99-851-9632</a>
+                        <a class="link" href="tel:+1234567890">72-537-8409</a>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <form action="">
+                        <input id="e-mail" name="email" class="link" type="email" placeholder="Your e-mail">
+                        <button class="btn btn--dark" type="submit">Submit<span>+</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__lower flex-row">
+                <span>Copyright © 2025</span>
+                <div class="footer__privacy flex-row">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+
+</html>
