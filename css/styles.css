@@ -515,7 +515,11 @@ main {
         align-items: center;
         gap: var(--s-xl);
 
-        @media (max-width: 1024px) {
+        @media (max-width: 75rem) {
+            gap: var(--s-lg);
+        }
+
+        @media (max-width: 64rem) {
             gap: var(--s-md);
         }
     }
@@ -543,7 +547,7 @@ main {
     & .hero__image {
         align-items: end;
         gap: var(--s-sm);
-        flex: 2 0 0;   
+        flex: 2 0 0; /* para 768 hacer 0 0 auto */  
         
         & picture, img {
             height: 100%;
@@ -552,8 +556,12 @@ main {
             display: block;
         }
 
-        @media (max-width: 1200px) {
-            flex-direction: column;
+        @media (max-width: 75rem) {
+            flex-wrap: wrap;
+        }
+
+        & p {
+            min-width: 18.75rem;
         }
     }  
 }
@@ -580,7 +588,7 @@ main {
             align-items: center;
             gap: var(--s-xl);
 
-            @media (max-width: 1024px) {
+            @media (max-width: 64rem) {
             gap: var(--s-md);
         }
             
@@ -612,7 +620,7 @@ main {
 /* video */
 .video {
     & .padding-80 {
-        @media (max-width: 1200px) {
+        @media (max-width: 75rem) {
             padding-left: 0;
         }
     }
@@ -637,7 +645,7 @@ main {
             }
         }
         & .subtitle-text {
-            @media (max-width: 1200px) {
+            @media (max-width: 75rem) {
                 max-width: var(--size-md);
             }
         }
@@ -649,11 +657,11 @@ main {
 .testimonial {
 
     & .container {
-        @media (max-width: 1200px) {
+        @media (max-width: 75rem) {
             padding-left: var(--s-xl);
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 64rem) {
             padding-left: 0;
         }
     }
@@ -705,7 +713,7 @@ main {
             gap: var(--s-md);
             align-items: end;
 
-            @media (max-width: 1024px) {
+            @media (max-width: 64rem) {
                 width: 100%;
             }
 
@@ -723,11 +731,11 @@ main {
             }
             
             & .subtitle-text {
-                @media (max-width: 1200px) {
+                @media (max-width: 75rem) {
                     text-align: start;
                 }
 
-                @media (max-width: 1024px) {
+                @media (max-width: 64rem) {
                     text-align: end;
                 }
             }
@@ -744,7 +752,7 @@ main {
         padding: 0;
         padding-left: var(--s-xl);
 
-        @media (max-width: 1024px) {
+        @media (max-width: 64rem) {
         padding-left: 0;
     }
     }
@@ -792,7 +800,7 @@ main {
                     border-bottom: 1px solid var(--c-display);
                     padding-bottom: 0.25rem;
                     min-width: var(--size-xxs);
-                    @media (max-width: 1200px) {
+                    @media (max-width: 1024px) {
                         min-width: var(--size-xs);
                     }
 
