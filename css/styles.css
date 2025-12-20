@@ -31,8 +31,8 @@ a {
     /* Fonts */
     --f-logo-sm: 500 1em/100% "Ubuntu Sans Mono", sans-serif;
     --f-logo-lg: 500 1.25em/100% "Ubuntu Sans Mono", sans-serif;
-    --f-heading-lg: 400 clamp(2.75rem, 6vw, 1.5rem)/110% "Ubuntu Sans", sans-serif;
-    --f-heading-md: 400 clamp(2rem, 5vw, 1rem)/120% "Ubuntu Sans", sans-serif; 
+    --f-heading-lg: 400 clamp(2rem, 6vw, 2.75rem)/110% "Ubuntu Sans", sans-serif;
+    --f-heading-md: 400 clamp(1rem, 5vw, 2rem)/120% "Ubuntu Sans", sans-serif; 
     --f-heading-sm: 400 1.5em/120% "Ubuntu Sans", sans-serif;
     --f-cursive-md: italic 500 1.25em/1.5em "Ubuntu Sans", sans-serif;
     --f-body-md: 300 1em/150% "Roboto", sans-serif;
@@ -207,7 +207,11 @@ main {
     margin: 0 auto;
     padding: var(--s-xl) 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 64rem) {
+        padding: var(--s-lg) 0;
+    }
+
+    @media (max-width: 48rem) {
         padding: var(--s-lg) 0;
     }
 }
@@ -525,7 +529,7 @@ main {
     }
 
     & .flex-row {
-        @media (max-width: 768px) {
+        @media (max-width: 48rempx) {
             flex-direction: column;
             align-items: flex-start;
         }
@@ -548,6 +552,10 @@ main {
         align-items: end;
         gap: var(--s-sm);
         flex: 2 0 0; /* para 768 hacer 0 0 auto */  
+
+        @media (max-width: 64rem) {
+            flex: 1 0 0;
+        }
         
         & picture, img {
             height: 100%;
@@ -718,18 +726,29 @@ main {
             }
 
             & .testimonial__image-block {
-                display: flex;
+                display: grid;
+                width: 100%;
+                grid-template-columns: repeat(3, minmax(15rem, 1fr));
+                grid-template-rows: auto;
                 gap: var(--s-md);
-                
+                align-items: stretch;
+
+                @media (max-width: 64rem) {
+                    grid-template-columns: repeat(3, minmax(17.5rem, 1fr));
+                }
 
                 & img {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     max-width: var(--size-xs);
                     object-fit: cover;
+                    aspect-ratio: 3/4;
+
+                    @media (max-width: 64rem) {
+                        max-width: 20rem;
                 }
             }
-            
+        }    
             & .subtitle-text {
                 @media (max-width: 75rem) {
                     text-align: start;
@@ -737,6 +756,7 @@ main {
 
                 @media (max-width: 64rem) {
                     text-align: end;
+                    max-width: 31.25rem;
                 }
             }
         }
@@ -791,8 +811,6 @@ main {
             }
 
             & .footer__form {
-
-
                 & form {
                     display: flex;
                     align-items: end;
@@ -832,7 +850,6 @@ main {
                         }
                     }
                 }
-                
             }
         }
 
