@@ -58,6 +58,7 @@ a {
     --s-xxl: 10rem;
     --s-xxxl: 15rem;
     --s-xxxxl: 20rem;
+    --s-20: 1.25rem;
 
     /* Sizes */
     --size-xxxs: 11.375rem;
@@ -320,10 +321,10 @@ main {
         position: absolute;
         background-color: #F6F6F6;
         z-index: 999;
-        top: 20px;
-        right: 20px;
-        bottom: 20px;
-        height: 100vh;
+        top: var(--s-20);
+        right: var(--s-20);
+        bottom: var(--s-20);
+        height: calc(100vh - var(--s-20) * 2);
         width: 70vw;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
         padding: var(--s-md);
