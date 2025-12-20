@@ -15,46 +15,24 @@
     <!-- header -->
 
     <header class="header">
-        <a href="index.html" class="logo--sm logo--mobile">ARCHI.</a>
-
-        <!-- burger button -->
-        <button id="navToggle" class="nav-toggle" aria-label="Open menu">
-            <i class="ri-menu-4-line"></i>
-        </button>
-
-        <!-- navigation -->
-        <nav class="nav">
-
-            <!-- navigation list -->
-            <ul class="nav__list">
-                <li class="nav__item"><a class="link" href="index.html">home</a></li>
-                <li class="nav__item dropdown">
-                    <a class="link" href="#projects">projects</a>
-                    <ul class="dropdown__menu">
-                        <li class="dropdown__item"><a class="link dropdown__link" href="landscape.html">landscapes</a>
-                        </li>
-                        <li class="dropdown__item"><a class="link dropdown__link" href="houses.html">private houses</a>
-                        </li>
-                        <li class="dropdown__item"><a class="link dropdown__link" href="urban.html">urban spaces</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__item"><a class="link" href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="menu-responsive" id="menuMobile">
-            <button class="nav-close" id="nav-close" aria-label="Close menu">
-                <i class="ri-close-line"></i>
-            </button>
+        <div class="header__inner">
+            
             <a href="index.html" class="logo--sm logo--mobile">ARCHI.</a>
-            <nav class="nav--responsive flex-column">
-                <!-- Responsive navigation list -->
+
+            <!-- burger button -->
+            <button id="navToggle" class="nav-toggle" aria-label="Open menu">
+                <i class="ri-menu-4-line"></i>
+            </button>
+
+            <!-- navigation -->
+            <nav class="nav">
+
+                <!-- navigation list -->
                 <ul class="nav__list">
                     <li class="nav__item"><a class="link" href="index.html">home</a></li>
                     <li class="nav__item dropdown">
-                        <a class="link link--project" href="#projects">projects</a>
-                        <ul class="dropdown__menu flex-column">
+                        <a class="link" href="#projects">projects</a>
+                        <ul class="dropdown__menu">
                             <li class="dropdown__item"><a class="link dropdown__link" href="landscape.html">landscapes</a>
                             </li>
                             <li class="dropdown__item"><a class="link dropdown__link" href="houses.html">private houses</a>
@@ -66,7 +44,42 @@
                     <li class="nav__item"><a class="link" href="contact.html">contact</a></li>
                 </ul>
             </nav>
-            <div class="social-media--mobile">
+            
+            <div class="menu-responsive" id="menuMobile">
+                <button class="nav-close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-line"></i>
+                </button>
+                <a href="index.html" class="logo--sm logo--mobile">ARCHI.</a>
+                <nav class="nav--responsive flex-column">
+                    <!-- Responsive navigation list -->
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="link" href="index.html">home</a></li>
+                        <li class="nav__item dropdown">
+                            <a class="link link--project" href="#projects">projects</a>
+                            <ul class="dropdown__menu flex-column">
+                                <li class="dropdown__item"><a class="link dropdown__link" href="landscape.html">landscapes</a>
+                                </li>
+                                <li class="dropdown__item"><a class="link dropdown__link" href="houses.html">private houses</a>
+                                </li>
+                                <li class="dropdown__item"><a class="link dropdown__link" href="urban.html">urban spaces</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a class="link" href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media--mobile">
+                    <a class="link" href="#">FB</a>
+                    <span>|</span>
+                    <a class="link" href="#">TW</a>
+                    <span>|</span>
+                    <a class="link" href="#">IN</a>
+                </div>
+            </div>
+            
+
+            <!-- social media -->
+            <div class="social-media">
                 <a class="link" href="#">FB</a>
                 <span>|</span>
                 <a class="link" href="#">TW</a>
@@ -75,15 +88,6 @@
             </div>
         </div>
         
-
-        <!-- social media -->
-        <div class="social-media">
-            <a class="link" href="#">FB</a>
-            <span>|</span>
-            <a class="link" href="#">TW</a>
-            <span>|</span>
-            <a class="link" href="#">IN</a>
-        </div>
     </header>
 
     <!-- /header -->
